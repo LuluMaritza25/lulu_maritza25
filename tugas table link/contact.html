@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <table border="3">
+        <tr>
+            <td><a href="home.html">Home</a></td>
+            <td><a href="gallery.html">gallery</a></td>
+            <td><a href="aboutme.html">aboutme</a></td>
+            <td><a href="contact.html">contact</a></td>
+        </tr>
+    </table>
+    <table>    
+        <tr>
+            <td style="color: aliceblue;">Nama</td>
+            <td style="color: aliceblue;">:</td>
+            <td style="color: aliceblue;"><input type="text" name="nama" id="nama"></td>
+        </tr>
+        <tr>
+            <td style="color: aliceblue;">Email</td>
+            <td style="color: aliceblue;">:</td>
+            <td style="color: aliceblue;"><input type="email" name="Email" id="Email"></td>
+        </tr>
+        <tr>
+            <td style="color: aliceblue;">Deskripsi</td>
+            <td style="color: aliceblue;">:</td>
+            <td style="color: aliceblue;"><textarea name="Deskripsi" id="Deskripsi" cols="30" rows="10"></textarea></td>
+        </tr>
+        
+    </table>
+    <button onclick="send()">send</button>
+
+    <script>
+        function send() {
+            var Nama = document.getElementById('nama').value
+            var Email = document.getElementById('Email').value
+            var Deskripsi = document.getElementById('Deskripsi').value
+
+            alert("Nama : " + Nama + "\n Email : " + Email + "\n Deskripsi : " + Deskripsi)
+        }
+    </script>
+</body>
+</html>
